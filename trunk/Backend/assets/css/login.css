@@ -1,0 +1,78 @@
+body {
+	width:1024px;
+	background-color: #ffffff;
+	margin: auto;
+}
+#header{
+    height: 260px;
+    text-align: center;
+    background-image: url("../bg_image.png");
+    padding-top: 37px;
+}
+#header p{
+    color: #ffffff;
+    font-size: 15px;
+    padding-top: 23px;
+}
+#mid-contain{
+    height:auto;
+    border-top: solid 4px #4dd6ce  ;
+    border-bottom: solid 4px #4dd6ce  ;
+    text-align: center;
+}
+#bottom{
+    text-align: center;
+    background-image: url("../bg_image.png");
+    padding-top: 16px;
+}
+#bottom p{
+    
+}
+a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+#mid-contain .input-group-addon{
+    border-right: none;
+    background-color: #eee;
+    border-top-left-radius: 4px ;
+    border-bottom-left-radius: 4px ;
+    width: 60px;
+}
+#mid-contain .form-control{
+    background-color: #eee; 
+    border-left: none;
+    height:45px;
+    
+}
+#mid-contain .form-control:focus{
+    border-left: solid 1px #66afe9;
+
+}
+#mid-contain .input-group{
+    width: 260px;
+}
+#btn-login-form{
+    width: 260px;
+    height:45px;
+    background-image: url("../bg_inactive_tab.png");
+    background-repeat:repeat;
+    border-color: #4dd6ce;
+}
+#btn-login-form:hover{
+    background-image: url("../bg_btn_hover.png");
+    background-repeat:repeat;
+}
+#mid-contain #first-row{
+    margin-top: 19px;
+}
+#mid-contain .row{
+    margin-top: 8px;
+}
+#mid-contain #last-row{
+    margin-top: 8px;
+    padding-bottom: 19px;
+}
