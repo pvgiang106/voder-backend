@@ -6,7 +6,7 @@
         $screenID = $_POST['screenID'];
     }
     $response['screenID'] = $screenID;
-    
+    require_once __DIR__ .'/config.php'; 
     require_once __DIR__ .'/db_connect.php';
     $db= new DB_CONNECT();
 
@@ -19,6 +19,7 @@
         $response["data"] = array();
         
         while($row = mysql_fetch_array($query,MYSQL_ASSOC)){
+            $row['image'] = BASE_PATH.$row['image'];
             array_push($response["data"],$row);
         }
         echo json_encode($response);

@@ -28,12 +28,12 @@
     $query = mysql_query("update $table set inactive = 1 where $idTable = $id");
     if($query){
         $response["responseCode"] = 1;
-        $response["msg"] = "Successful";
+        $response["msg"] = "Item is deleted successful";
         $response['data'] = array($idTable => $id);     
         echo json_encode($response);
     }else {
         $response["responseCode"]=0;
-        $response["msg"]="email or password incorrect";
+        $response["msg"]="Delete record id = ".$id." in table ".$_POST['table']." fail";
         $response['data'] = $query;
         echo json_encode($response);
     }
